@@ -9,9 +9,13 @@ def game():  # Define the main function for the game
         computer_choice = random.choice(choices)  # Computer makes a random choice
 
         # Ask the player for their choice
-        player_choice = input("Enter your choice (rock, paper, scissors) or quit: ")
+        # Ask the player for their choice
+        player_choice = input("Type your choice (rock, paper, scissors) or quit: ").lower()
         if player_choice == 'quit':  # Allow the player to quit
             break
+        elif player_choice not in choices:  # Check if the player's choice is valid
+            print("Invalid choice. Please type rock, paper, scissors, or quit.")
+            continue
 
         print(f"Computer chose {computer_choice}")  # Display the computer's choice
 
