@@ -1,4 +1,4 @@
-import random  # Import the random module for generating random choices
+import random  # Import the random module for generating random choices.
 
 def game():  # Define the main function for the game
     player_score = 0  # Initialize player's score
